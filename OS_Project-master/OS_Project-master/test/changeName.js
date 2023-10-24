@@ -1,0 +1,1 @@
+document.getElementById('memid').textContent = sessionStorage.getItem('email');

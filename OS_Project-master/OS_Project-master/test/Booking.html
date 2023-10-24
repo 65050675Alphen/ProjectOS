@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleBooking.css" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+
+    <div class="movie-container">
+      <label>Selected Movie :</label>
+      <span id="selectedMovie"></span>
+    </div>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>N/A</small>
+      </li>
+
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+
+      <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+      <div class="row">
+        <div class="row-number right">F</div>
+        <div class="seat"name = "F1"></div>
+        <div class="seat"name = "F2"></div>
+        <div class="seat"name = "F3"></div>
+        <div class="seat"name = "F4"></div>        
+        <div class="seat"name = "F5"></div>        
+        <div class="seat"name = "F6"></div>
+        <div class="seat"name = "F7"></div>
+        <div class="seat"name = "F8"></div>
+        <div class="row-number left">F</div>
+      </div>
+      <div class="row">
+        <div class="row-number right">E</div>
+        <div class="seat"name = "E1"></div>
+        <div class="seat"name = "E2"></div>
+        <div class="seat"name = "E3"></div>
+        <div class="seat"name = "E4"></div>        
+        <div class="seat"name = "E5"></div>        
+        <div class="seat"name = "E6"></div>
+        <div class="seat"name = "E7"></div>
+        <div class="seat"name = "E8"></div>
+        <div class="row-number left">E</div>
+      </div>
+      <div class="row">
+        <div class="row-number right">D</div>
+        <div class="seat"name = "D1"></div>
+        <div class="seat"name = "D2"></div>
+        <div class="seat"name = "D3"></div>
+        <div class="seat"name = "D4"></div>        
+        <div class="seat"name = "D5"></div>        
+        <div class="seat"name = "D6"></div>
+        <div class="seat"name = "D7"></div>
+        <div class="seat"name = "D8"></div>
+        <div class="row-number left">D</div>
+      </div>
+      <div class="row">
+        <div class="row-number right">C</div>
+        <div class="seat"name = "C1"></div>
+        <div class="seat"name = "C2"></div>
+        <div class="seat"name = "C3"></div>
+        <div class="seat"name = "C4"></div>        
+        <div class="seat"name = "C5"></div>        
+        <div class="seat"name = "C6"></div>
+        <div class="seat"name = "C7"></div>
+        <div class="seat"name = "C8"></div>
+        <div class="row-number left">C</div>
+      </div>
+      <br><br><div class="background-text" style="position: absolute; top: 78%; left: 50%; transform: translate(-50%, -50%);">
+        <p>CLASSIC - <small id="ticketPrice1"></small></p>
+      </div>
+      <div class="row">
+        <div class="row-number right">B</div>
+        <div class="seat"name = "B1"></div>
+        <div class="seat"name = "B2"></div>
+        <div class="seat"name = "B3"></div>
+        <div class="seat"name = "B4"></div>        
+        <div class="seat"name = "B5"></div>        
+        <div class="seat"name = "B6"></div>
+        <div class="seat"name = "B7"></div>
+        <div class="seat"name = "B8"></div>
+        <div class="row-number left">B</div>
+      </div>
+      <div class="row">
+        <div class="row-number left">A</div>
+        <div class="seat"name = "A1"></div>
+        <div class="seat"name = "A2"></div>
+        <div class="seat"name = "A3"></div>
+        <div class="seat"name = "A4"></div>        
+        <div class="seat"name = "A5"></div>        
+        <div class="seat"name = "A6"></div>
+        <div class="seat"name = "A7"></div>
+        <div class="seat"name = "A8"></div>
+        <div class="row-number right">A</div>
+      </div>
+      <div class="background-text" style="position: absolute; top: 108%; left: 50%; transform: translate(-50%, -50%);">
+        <p>VIP - <small id="ticketPrice2"></small></p>
+      </div>  
+    </div>
+    <p class="text">
+      You have selected <span id="count">0</span> seats for a price of <span id="total">0</span> Baht
+    </p>
+    <br>
+    
+    <button class ="confirm-button">Confirm Booking</button>
+
+    <script src="scriptBooking.js"></script>
+    <!-- <script >localStorage.clear()</script> --> <!--เอาไว้ลเาง booking-->
+  </body>
+</html>

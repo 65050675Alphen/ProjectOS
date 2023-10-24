@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleLogin.css" />
+    <title>Login</title>
+</head>
+
+<body>
+    <p class="headerText">Movie Tickets Online Booking</p>
+    <form id="loginForm">
+        <div class="warning">
+            <p id="emailWarning">Email not found</p>
+        </div>
+        <input class="input" type="email" name="email" placeholder="Email" required /><br>
+        <div class="warning">
+            <p id="passWarning">Incorrect password</p>
+        </div>
+        <input class="input" type="password" name="password" placeholder="Password" required /><br>
+        <div class="button">
+            <button id="login" class="login" type="submit">Login</button>
+            <button id="register" class="register" type="submit">Register</button>
+        </div>
+        <div class="alert">
+            <p id="successfulRegister">Success</p>
+        </div>
+        <div class="warning">
+            <p id="dupeWarning">Email Already In Use</p>
+        </div>
+    </form>
+    <script src="scriptLogin.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+</body>
+
+</html>
